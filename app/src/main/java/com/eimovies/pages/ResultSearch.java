@@ -2,21 +2,22 @@ package com.eimovies.pages;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mobilemovies.R;
-
-import java.util.List;
-
 import com.eimovies.client.ApiService;
 import com.eimovies.model.FilmeResponse;
 import com.eimovies.model.FilmesResult;
 import com.eimovies.pages.components.ItemFilmeClickListener;
 import com.eimovies.pages.components.SearchResultsAdpater;
+import com.example.mobilemovies.R;
+
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -32,6 +33,7 @@ public class ResultSearch extends AppCompatActivity implements ItemFilmeClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result_search);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         init();
         searchLogic();
     }
