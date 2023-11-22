@@ -23,6 +23,6 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
                 startActivity(new Intent(SplashScreen.this, ListaFilmesActivity.class));
             }
-        }, 300);
+        }, 4500);
     }
 }
