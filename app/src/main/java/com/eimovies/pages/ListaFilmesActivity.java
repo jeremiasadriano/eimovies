@@ -27,7 +27,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class ListaFilmesActivity extends AppCompatActivity implements ItemFilmeClickListener {
-    private static final String API_KEY = "b23974423f00f9267d31e75c8b937c2e";
+    private static final String API_KEY = "SECRET";
     private RecyclerView discoverRecycleView, topRatedRecycleView, upcomingRecyclerView, playingNowRecyclerView;
     private TextView searchBtn;
 

@@ -39,7 +39,7 @@ import retrofit2.Response;
 
 public class DetalhesActivity extends AppCompatActivity implements ItemFilmeClickListener {
     public static final String EXTRA_FILMES = "EXTRA_FILMES";
-    private static final String API_KEY = "b23974423f00f9267d31e75c8b937c2e";
+    private static final String API_KEY = "SECRET";
     private RecyclerView genreRecyclerView, similarRecycleView, recommandationsRecycleView;
     private TextView titleTV, languageTV, realiseTimeTV, ratingTV, sinopseTV;
     private ImageView moviesBackground;
